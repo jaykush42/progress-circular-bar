@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 15px;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: solid rgb(197, 14, 173); */
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: #e3edf7;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill
+{ 
+    width: 160px;
+    height: 160px;
+    /* background-colorcornflowerblue; */
+    position: relative;
+}
+.outer
+{
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    padding: 5px;
+    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+                -6px -6px 10px -1px rgba(255,255,255,0.7);
+}
+
+.inner{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    /* border: 1px solid red; */
+    box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2),
+            inset -4px -4px 6px -1px rgba(255,255,255,0.7),
+            -0.5px -0.5px 0px rgba(255,255,255,1),
+            0.5px 0.5px 0px rgba(0,0,0,0.15),
+            0px 12px 10px -10px rgba(0,0,0,0.05);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#number1
+{
+    font-weight:bolder;
+    color: #555;
+}
+#number2
+{
+    font-weight: bolder;
+    color: #555;
+}
+#number3
+{
+    font-weight: bolder;
+    color: #555;
+}
+
+
+svg{
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+.cir1
+{
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 435;
+    stroke-dashoffset: 435;
+    animation: anim 2s linear forwards;
+}
+.cir2
+{
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 435;
+    stroke-dashoffset: 435;
+    animation: anim2 2s linear forwards;
+}
+
+.cir3
+{
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 435;
+    stroke-dashoffset: 435;
+    animation: anim3 2s linear forwards;
+}
+@keyframes anim {
+    100%{
+        stroke-dashoffset: 44;
+    }
+}
+@keyframes anim2 {
+    100%{
+        stroke-dashoffset: 87;
+    }
+}
+@keyframes anim3 {
+    100%{
+        stroke-dashoffset: 152.25;
+    }
+}
+span{
+    position: absolute;
+ transform: translateX(-50%) translateY(-5%);
+ font-size: 0.8em;
+ font-weight: bolder;
+ letter-spacing: 0.1em;
+ text-transform: uppercase;
+}
